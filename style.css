@@ -1,0 +1,118 @@
+@font-face {
+  font-family: Cool;
+  src: url(fonts/cool.otf);
+}
+@font-face {
+  font-family: Quantum;
+  src: url(fonts/quantum.otf);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  padding: 0 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+}
+
+nav a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin: 0 10px;
+  transition: all 0.2s ease-in-out;
+  font-weight: 900;
+  margin: 0 50px;
+  text-shadow: 1px 1px black;
+  position: relative;
+  font-size:small;
+}
+
+nav a:hover {
+  color: #f60;
+  font-size: medium;
+}
+
+
+
+#home {
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  height: 100vh;
+  font-family: 'Cool';
+  animation: bg 5s ease-in-out infinite forward alternate-reverse;
+}
+#home::before{
+  content: "";
+  position:absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background-image: url("images/universe.jpg");
+  background-size: cover;
+  background-position: center center;
+ 
+}
+
+
+#home h1 {
+  font-size: 48px;
+  margin-bottom: 30px;
+  color: rgb(255, 0, 0);
+  text-shadow: 2px 2px 2px black,-0.5px -0.5px black;
+  letter-spacing: 3px;
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+}
+#home h1:hover{
+  font-size: 52px;
+  color: rgb(235, 2, 2);
+  margin-bottom:26px ;
+}
+
+#home p {
+  font-size: 20px;
+  margin-bottom: 40px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  line-height: 30px;
+  text-shadow: 2px 2px 2px black,-0.5px -0.5px black;
+}
+
+#home .container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 40px;
+  position: relative;
+}
+
+#home .btn {
+  background-color: rgb(189, 37, 37);
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.6s ease-in-out;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+#home .btn:hover {
+  background-color: #fff;
+  color: rgb(0, 0, 0);
+}
+
+

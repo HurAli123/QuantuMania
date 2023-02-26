@@ -1,0 +1,94 @@
+@font-face {
+  font-family:cool ;
+  src: url(fonts/quantum.otf);
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+ /* Set default font for the entire page */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #fff;
+}
+body {
+  background-image: url("images/space.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #f2f2f2; 
+  background-attachment: fixed;
+}
+/* Center the content of the blog post */
+#blog-post {
+  padding: 2px 6em;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+/* Style the headings */
+h1, h2 {
+  font-size: 32px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-family: 'cool';
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 1px black;
+}
+
+/* Style the paragraphs */
+p {
+
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Style the unordered list */
+ul {
+
+  margin-bottom: 20px;
+  margin-left: 40px;
+}
+
+/* Style the list items */
+li {
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+/* Add a border to the list items */
+li:before {
+  content: "• ";
+  color: rgb(184, 184, 184);
+  font-size: 24px;
+  font-weight: bold;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.back-to-home {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(206, 206, 206);
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  width: 20%;
+  margin: auto;
+  position: relative;
+  top: 3px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.back-to-home:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+  font-size: large;
+  color: black;
+}
